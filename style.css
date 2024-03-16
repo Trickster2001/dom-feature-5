@@ -8,3 +8,64 @@ html, body {
   height: 100%;
   width: 100%;
 }
+
+body {
+  background-color: aqua;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#card {
+  height: 480px;
+  width: 300px;
+  background-color: white;
+  border-radius: 15px;
+  border: 3px solid black;
+  position: relative;
+}
+
+#stories {
+  height: 120px;
+  width: 100%;
+  /* background-color: red; */
+  border-bottom: 1px solid #dadada;
+  padding: 15px;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: none;
+}
+
+/* #stories::-webkit-scrollbar {
+  scrollbar-width: none;
+} */
+
+.story {
+  /* background-color: blue; */
+  border: 3px solid red;
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.story img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+#fullScreen {
+  height: 100%;
+  width: 100%;
+  /* background-color: red; */
+  background-size: cover;
+  background-position: center ;
+  position: absolute;
+  display: none;
+  transition: all ease-in-out 0.2s;
+}
